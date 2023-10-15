@@ -1,5 +1,5 @@
 ---
-
+import CardVideo from "./CardVideo";
 ---
 
 <section
@@ -28,7 +28,7 @@
     mt-10
     max-md:max-w-full"
     >
-      <div
+      <h6
         class="self-center
       text-stone-600 text-center text-3xl
       font-bold
@@ -38,8 +38,8 @@
       max-md:max-w-full"
       >
         Conocenos
-      </div>
-      <div
+      </h6>
+      <h7
         class="self-center
       text-neutral-400 text-center text-base
       leading-[150%]
@@ -48,34 +48,8 @@
       max-md:max-w-full"
       >
         Lo recordaras por siempre
-      </div>
+      </h7>
     </div>
-    <div
-      class="items-start
-    self-center
-    flex
-    w-full
-    max-w-[1040px]
-    flex-col
-    mt-16
-    mb-16
-    max-md:max-w-full"
-    >
-      <div class="text-stone-400 text-xl italic leading-[140%]">
-        Lugar destacado
-      </div>
-      <img
-        loading="lazy"
-        srcset="/view1.png"
-        class="aspect-[2.23]
-      object-cover object-center
-      w-full
-      overflow-hidden
-      self-center
-      grow
-      mt-4
-      max-md:max-w-full"
-      />
-    </div>
+    <CardVideo  />
   </div>
 </section>
