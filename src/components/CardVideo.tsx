@@ -12,7 +12,7 @@ export default function MediaCover() {
       sx={{ display: 'flex', flexWrap: 'wrap', p: 0, m: 0, height: '100%', width: '100%' }}
     >
 
-      <iframe src="https://player.vimeo.com/video/873569687?h=0c5736bb06&autoplay=1" width="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="" width="100%"  allow="autoplay; fullscreen; picture-in-picture" ></iframe>
 
     </Box>
   );

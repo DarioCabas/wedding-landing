@@ -1,9 +1,71 @@
 ---
-
+import CardService from "./CardService";
 ---
 
 <section
-  class="landing-section bg-violet-400 h-screen w-screen text-center overflow-hidden relative"
+  class="landing-section bg-slate-300 h-screen w-screen text-center overflow-hidden relative"
 >
-
+  <div
+    class="bg-transparent
+    self-stretch
+    flex
+    h-full
+    w-full
+    flex-col
+    px-5
+    py-10
+    max-md:max-w-full"
+  >
+    <div
+      class="items-center
+      self-center
+      flex
+      w-full
+      max-w-[1040px]
+      flex-col
+      mt-7
+      max-md:max-w-full"
+    >
+      <div
+        class="self-center
+        text-stone-600 text-center text-3xl
+        font-bold
+        leading-[125%]
+        tracking-tighter
+        w-[1040px]
+        max-md:max-w-full"
+      >
+        Ofrecemos
+      </div>
+      <div
+        class="self-center
+        text-neutral-400 text-center text-base
+        leading-[150%]
+        w-[1040px]
+        mt-1
+        max-md:max-w-full"
+      >
+        Servicios para planificar y orquestar su ocasión especial
+      </div>
+    </div>
+    <div
+      class="self-center w-[898px] max-w-full mt-2 lg:mt-48, md:mt-48 mb-48 overflow-y: auto"
+    >
+      <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+        {
+          [1, 2, 3].map((item) => {
+            return (
+              <div class="flex flex-col items-stretch w-[33%] max-md:w-full ">
+                <CardService
+                  image="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320"
+                  title="Title"
+                  description="Description"
+                />
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
 </section>
