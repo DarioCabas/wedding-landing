@@ -3,13 +3,98 @@
 ---
 
 <section
-  class="landing-section bg-blue-500 h-screen w-screen text-center overflow-hidden relative"
-  
+  class="landing-section bg-blue-500 h-screen w-screen text-center overflow-hidden relative flex items-center justify-center"
 >
+  <div
+    class="shadow-[2px_2px_5px_rgba(0,0,0,0.3)] h-[530px] w-[500px] overflow-hidden"
+  >
+    <div
+      class="flex translate-x-0 transition-transform duration-[0.5s] ease-[ease-in-out]"
+      id="imgs"
+    >
+      <img
+        class="w-[500px] h-[500px] object-cover"
+        src="https://images.unsplash.com/photo-1599394022918-6c2776530abb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1458&q=80"
+        alt="first-image"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        alt="second-image"
+        class="w-[500px] h-[500px] object-cover"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1599423300746-b62533397364?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        alt="third-image"
+        class="w-[500px] h-[500px] object-cover"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1599561046251-bfb9465b4c44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1492&q=80"
+        alt="fourth-image"
+        class="w-[500px] h-[500px] object-cover"
+      />
+    </div>
 
-    
-
-  <div class="absolute top-0 bottom-0 h-full w-full z-10">
-    <slot name="background" />
+    <div class="flex justify-between">
+      <button
+        class="bg-[rebeccapurple] text-white cursor-pointer w-[49.5%] p-2 border-[none] hover:opacity-90 focus:outline-none"
+        id="left"
+        class="btn">Prev</button
+      >
+      <button
+        class="bg-[rebeccapurple] text-white cursor-pointer w-[49.5%] p-2 border-[none] hover:opacity-90 focus:outline-none"
+        id="right"
+        class="btn">Next</button
+      >
+    </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const imgs = document.getElementById("imgs");
+    const leftBtn = document.getElementById("left");
+    const rightBtn = document.getElementById("right");
+
+    if (imgs && leftBtn && rightBtn) {
+      const img = document.querySelectorAll("#imgs img");
+      let idx = 0;
+      let interval = setInterval(run, 2000);
+
+      function run() {
+        idx++;
+        changeImage();
+      }
+
+      function changeImage() {
+        if (idx > img.length - 1) {
+          idx = 0;
+        } else if (idx < 0) {
+          idx = img.length - 1;
+        }
+
+        if (imgs) {
+          imgs.style.transform = `translateX(${-idx * 500}px)`;
+        }
+      }
+
+      function resetInterval() {
+        clearInterval(interval);
+        interval = setInterval(run, 2000);
+      }
+
+      rightBtn.addEventListener("click", () => {
+        idx++;
+        changeImage();
+        resetInterval();
+      });
+
+      leftBtn.addEventListener("click", () => {
+        idx--;
+        changeImage();
+        resetInterval();
+      });
+    } else {
+      console.error("One or more elements not found in the DOM.");
+    }
+  });
+</script>

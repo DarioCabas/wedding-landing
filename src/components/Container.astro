@@ -1,0 +1,12 @@
+---
+const { class: className } = Astro.props;
+---
+
+<div
+  class:list={[
+    "snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth",
+    className,
+  ]}
+>
+  <slot />
+</div>
