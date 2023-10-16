@@ -31,6 +31,7 @@ export default function GalleryList() {
             src={`${item.img}?w=248&fit=crop&auto=format`}
             alt={item.title}
             loading="lazy"
+            onClick={handleClickOpen}
           />
           <ImageListItemBar
             title={item.title}
