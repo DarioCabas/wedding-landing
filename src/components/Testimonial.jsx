@@ -1,15 +1,24 @@
-import React, { Component } from "react";
+import * as React from 'react';
+import AspectRatio from '@mui/joy/AspectRatio';
+import Box from '@mui/joy/Box';
+import Button from '@mui/joy/Button';
+import Card from '@mui/joy/Card';
+import CardContent from '@mui/joy/CardContent';
+import Typography from '@mui/joy/Typography';
+import Sheet from '@mui/joy/Sheet';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { Grid } from '@mui/material';
+import { Avatar, Stack } from '@mui/joy';
 
 const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver asdasdasdasdasdasdasdasdasdas",
+      "Money makes your life easier. If you're lucky to have it, you're lucky.",
     name: "Herman Jensen",
     title: "Founder & Leader",
-    img: "https://i.imgur.com/Dn0qoCG.png",
+    img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.jpg",
   },
   {
     id: "feedback-2",
@@ -17,7 +26,7 @@ const feedback = [
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
     name: "Steve Mark",
     title: "Founder & Leader",
-    img: "https://i.imgur.com/fk8eEvW.png",
+    img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.jpg",
   },
   {
     id: "feedback-3",
@@ -25,10 +34,10 @@ const feedback = [
       "It is usually people in the money business, finance, and international trade that are really rich.",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
-    img: "https://i.imgur.com/dLxxRDy.png",
+    img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.jpg",
   },
 ];
-const Testimonials = () => {
+const TestimonialsComponent = () => {
 
   return (
     <Carousel
@@ -40,28 +49,33 @@ const Testimonials = () => {
       interval={6100}
     >
       {feedback.map((card) => (
-        <div class="flex flex-col px-4 py-12 rounded-lg max-w-md mx-auto my-0 feedback-card" key={card?.id}>
+        <Box sx={{ width: '100%', height: 500, display: 'flex', justifyContent: 'center', mb: 0, alignItems: 'center' }}>
+          <Card sx={{ width: { md: '50%', lg: '50%', sm: '50%', xs: '85%', height: 400 } }}>
+            <Stack sx={{ height: '100%'}} direction={{ xs: 'column', sm: 'row' }} >
 
-        <p class="font-poppins font-normal text-2xl leading-8 text-white mb-6">
-          {card?.content}
-        </p>
-    
-        <div class="flex items-center">
-          <img src={card?.img} alt={card?.name} class="rounded-full " />
-          <div class="ml-4">
-            <h4 class="font-poppins font-semibold text-xl  text-white">
-              {card?.name}
-            </h4>
-            <p class="font-poppins font-normal text-base text-dimWhite">
-              {card?.title}
-            </p>
-          </div>
-        </div>
-      </div>
-      ))}
-    </Carousel>
+              <Box sx={{ width: {md: '80%'}, height: {md:'100%'} ,display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Avatar src={card.img} sx={{ width: { sm: 200, xs: 100 }, height: { sm: 200, xs: 100 } }} />
+              </Box>
+
+              <Stack spacing={6} sx={{ width: '100%', height: '100%', display: 'flex', justifyContent:'center'}}>
+                <Typography variant="body2" sx={{ textAlign: 'justify', fontSize: { xs: '0.8rem', sm: '1rem' } }}>
+                  {card?.content}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ fontSize: { xs: '0.8rem', sm: '1rem' } }}>
+                  {card?.name}
+                  <br />
+                  <Typography variant='subtitle1'>{card?.title}</Typography>
+                </Typography>
+              </Stack>
+
+            </Stack>
+          </Card>
+        </Box>
+      ))
+      }
+    </Carousel >
   );
 
 }
 
-export default Testimonials
+export default TestimonialsComponent
