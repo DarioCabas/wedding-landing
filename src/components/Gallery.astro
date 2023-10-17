@@ -1,62 +1,195 @@
 ---
-
-
+import Dialog from "./Dialog.astro";
 ---
 
 <section
-  class="landing-section bg-gray-100 h-screen w-screen text-center overflow-hidden relative flex items-center justify-center"
+  class="landing-section bg-gray-100 w-screen text-center overflow-hidden relative"
 >
-<div
-    class="bg-transparent
-    self-stretch
-    flex
-    h-full
-    w-full
-    flex-col
-    px-5
-    py-10
-    max-md:max-w-full"
-  >
-    <div
-      class="items-center
-      self-center
-      flex
-      w-full
-      max-w-[1040px]
-      flex-col
-      mt-7
-      max-md:max-w-full"
-    >
+  <div class="container my-10 mx-auto md:px-6">
+    <!-- Section: Design Block -->
+    <section class="mb-32">
+      <style>
+        .zoom:hover img {
+          transform: scale(1.1);
+        }
+      </style>
+
+      <h2 class="mb-12 text-center text-3xl font-bold">
+        Eventos de los que estamos orgullosos
+      </h2>
       <div
-        class="self-center
-        text-stone-600 text-center text-3xl
-        font-bold
-        leading-[125%]
-        tracking-tighter
-        w-[1040px]
-        max-md:max-w-full"
+        data-te-perfect-scrollbar-init
+        data-te-suppress-scroll-x="true"
+        class="relative xs:h-[700px] xs:w-full overflow-hidden"
       >
-        Galleria
+        <div class="grid gap-6 lg:grid-cols-3">
+          <div
+            data-te-toggle="modal"
+            data-te-target="#exampleModalCenter"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+            data-te-ripple-init
+            data-te-ripple-color="dark"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg"
+              class="w-full align-middle transition duration-300 ease-linear"
+            />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
+              >
+                <div class="flex h-full items-end justify-start">
+                  <h5 class="m-6 text-lg font-bold text-white">
+                    Hollywood exhibition
+                  </h5>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
+                >
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+            data-te-ripple-init
+            data-te-ripple-color="dark"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.jpg"
+              class="w-full align-middle transition duration-300 ease-linear"
+            />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
+              >
+                <div class="flex h-full items-end justify-start">
+                  <h5 class="m-6 text-lg font-bold text-white">Genius Loci</h5>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
+                >
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+            data-te-ripple-init
+            data-te-ripple-color="dark"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/city/045.jpg"
+              class="w-full align-middle transition duration-300 ease-linear"
+            />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
+              >
+                <div class="flex h-full items-end justify-start">
+                  <h5 class="m-6 text-lg font-bold text-white">Big Apple</h5>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
+                >
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+            data-te-ripple-init
+            data-te-ripple-color="dark"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.jpg"
+              class="w-full align-middle transition duration-300 ease-linear"
+            />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
+              >
+                <div class="flex h-full items-end justify-start">
+                  <h5 class="m-6 text-lg font-bold text-white">Sun City</h5>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
+                >
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+            data-te-ripple-init
+            data-te-ripple-color="dark"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/city/048.jpg"
+              class="w-full align-middle transition duration-300 ease-linear"
+            />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
+              >
+                <div class="flex h-full items-end justify-start">
+                  <h5 class="m-6 text-lg font-bold text-white">Paris flavor</h5>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
+                >
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+            data-te-ripple-init
+            data-te-ripple-color="dark"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/standard/city/049.jpg"
+              class="w-full align-middle transition duration-300 ease-linear"
+            />
+            <a href="#!">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]"
+              >
+                <div class="flex h-full items-end justify-start">
+                  <h5 class="m-6 text-lg font-bold text-white">
+                    Sky is the limit
+                  </h5>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"
+                >
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div
-        class="self-center
-        text-neutral-400 text-center text-base
-        leading-[150%]
-        w-[1040px]
-        mt-1
-        max-md:max-w-full"
-      >
-        Vive con nosotros nuestros momentos que mas nos han marcado
-      </div>
-    </div>
-    <div
-      class="self-center w-[898px] max-w-full mt-10 lg:mt-14, md:mt-14 mb-48"
-    >
-      <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-        <a>hjoasd</a>
-      </div>
-    </div>
+    </section>
+    <!-- Section: Design Block -->
   </div>
+  <Dialog />
 </section>
-
-
