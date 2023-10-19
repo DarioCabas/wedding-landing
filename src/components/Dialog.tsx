@@ -33,7 +33,7 @@ export default function Modal(props: DialogProps) {
             <div
               className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
             >
-              <div className="relative w-auto my-6 mx-auto max-w-3xl ">
+              <div className="relative w-auto my-6 mx-auto max-w-5xl ">
                 {/*content*/}
                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-ful bg-slate-200 outline-none focus:outline-none">
                   {/*header*/}
@@ -53,7 +53,7 @@ export default function Modal(props: DialogProps) {
                   {/*body*/}
                   <div className="relative p-3 flex-auto">
                     <p className="my-2 text-blueGray-500 text-lg leading-relaxed">
-                      <ImageGallery items={images} showPlayButton={false} />
+                      <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} />
                     </p>
                   </div>
                   {/*footer*/}
