@@ -36,7 +36,7 @@ const TestimonialSwiper = () => {
     <>
       <div className="max-w-6xl px-5 mx-auto mt-16 mb-10 md:mt-36 md:mb-20 text-center">
         <h2 className="text-4xl font-bold text-center text-darkBlue">
-          What they've said
+          Que dicen de nosotros
         </h2>
       </div>
       <Swiper
