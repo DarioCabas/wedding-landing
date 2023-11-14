@@ -1,5 +1,6 @@
 ---
-import TestimonialCard from "./TestimonialCard.astro";
+import TestimonialSwiper from "./TestimonialSwiper";
+
 ---
 
 <section
@@ -9,15 +10,8 @@ import TestimonialCard from "./TestimonialCard.astro";
   <div class="container my-10 mx-auto md:px-6">
     <!-- Section: Design Block -->
     <section class="mb-32">
-      <style>
-        .zoom:hover img {
-          transform: scale(1.1);
-        }
-      </style>
-
-      <h2 class="mb-12 text-center text-3xl font-bold">Testimonios</h2>
-      <div class="relative overflow-hidden md:mt-32">
-        <TestimonialCard />
+      <div class="">
+        <TestimonialSwiper client:load/>
       </div>
     </section>
     <!-- Section: Design Block -->
