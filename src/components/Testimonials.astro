@@ -1,5 +1,5 @@
 ---
-import TestimonialCard from "./TestimonialCard.astro";
+import TestimonialSwiper from "./TestimonialSwiper";
 
 ---
 
@@ -7,31 +7,18 @@ import TestimonialCard from "./TestimonialCard.astro";
   class="landing-section h-[700px] bg-slate-400 w-screen text-center overflow-hidden relative"
   id="testimonials"
 >
-<div class="container my-10 mx-auto md:px-6">
-  <!-- Section: Design Block -->
-  <section class="mb-32">
-    <style>
-      .zoom:hover img {
-        transform: scale(1.1);
-      }
-    </style>
-
-    <h2 class="mb-12 text-center text-3xl font-bold">
-      Testimonios
-    </h2>
-    <div
-     
-      class="relative overflow-hidden md:mt-32"
-    >
-    <TestimonialCard />
-    </div>
-  </section>
-  <!-- Section: Design Block -->
-</div>
-  <div class="container mx-auto md:px-6 flex items-center justify-center h-full">
-    <div class="flex items-center justify-center h-full">
-      
-    </div>
+  <div class="container my-10 mx-auto md:px-6">
+    <!-- Section: Design Block -->
+    <section class="mb-32">
+      <div class="">
+        <TestimonialSwiper client:load/>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  </div>
+  <div
+    class="container mx-auto md:px-6 flex items-center justify-center h-full"
+  >
+    <div class="flex items-center justify-center h-full"></div>
   </div>
 </section>
-
