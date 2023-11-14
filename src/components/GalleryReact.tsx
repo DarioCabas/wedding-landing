@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Dialog from './Dialog';
+import Dialog from './TestimonialCard';
 
 const GalleryReact = () => {
 
