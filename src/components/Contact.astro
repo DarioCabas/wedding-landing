@@ -1,5 +1,7 @@
 ---
-
+import GroupFooterNav from "../components/blocks/GroupFooterNav.astro";
+import Container from "../components/shared/Container.astro";
+import FooterNav from "../components/shared/FooterNav.astro";
 ---
 
 <section
@@ -11,7 +13,7 @@
     class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
   >
     <div
-      class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between"
+      class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between sm:ml-40 sm:mr-40"
     >
       <div class="mr-12 hidden lg:block">
         <span>Mantente conectado con nosotros:</span>
@@ -31,7 +33,11 @@
           </svg>
         </a>
 
-        <a href="https://instagram.com/lavictoriaev?igshid=MmU2YjMzNjRlOQ==" target="_blank" class="mr-6 text-neutral-600 dark:text-neutral-200">
+        <a
+          href="https://instagram.com/lavictoriaev?igshid=MmU2YjMzNjRlOQ=="
+          target="_blank"
+          class="mr-6 text-neutral-600 dark:text-neutral-200"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
@@ -47,7 +53,7 @@
     </div>
 
     <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-    <div class="mx-6 py-10 text-center md:text-left">
+    <div class="mx-6 py-10 text-center md:text-left sm:ml-40 sm:mr-40">
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <!-- Tailwind Elements section -->
         <div class="">
@@ -72,10 +78,10 @@
           </p>
         </div>
         <!-- Products section -->
-        <div class=""></div>
-
+        <div class="w-full"></div>
+        <div class="w-full"></div>
         <!-- Contact section -->
-        <div>
+        <div class="">
           <h6
             class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
           >
@@ -127,8 +133,13 @@
       <span>© 2023 Copyright:</span>
       <a
         class="font-semibold text-neutral-600 dark:text-neutral-400"
-        href="https://tailwind-elements.com/">La Victoria Eventos</a
+        href="https://tailwind-elements.com/"
       >
+        La Victoria Eventos
+      </a>
+       | <span>Made by:</span> <a class="font-semibold text-neutral-600 dark:text-neutral-400" href="https://ayaumadev.com/" target="_blank">
+          Ayaumadev
+        </a>
     </div>
   </footer>
 </section>
