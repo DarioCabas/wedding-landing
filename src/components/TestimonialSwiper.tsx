@@ -1,11 +1,11 @@
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation,Autoplay } from 'swiper/modules';
+import { Pagination, Navigation,Autoplay, Keyboard } from 'swiper/modules';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import 'swiper/css/navigation';
 
 
 const testimonialItems = [
@@ -35,7 +35,7 @@ const TestimonialSwiper = () => {
   return (
     <>
       <div className="max-w-6xl px-5 mx-auto mt-16 mb-10 md:mt-36 md:mb-20 text-center">
-        <h2 className="text-4xl font-bold text-center text-darkBlue">
+        <h2 className="text-4xl font-bold text-center text-darkBlue text-[#556d5f]">
           Que dicen de nosotros
         </h2>
       </div>
@@ -43,19 +43,20 @@ const TestimonialSwiper = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Autoplay, Pagination, Navigation]}
+        keyboard={{
+          enabled: true,
+        }}
+        navigation={false}
+        spaceBetween={30}
+        modules={[Autoplay, Pagination, Navigation, Keyboard]}
         centeredSlides={true}
-        slidesPerView={1}
+        slidesPerView={3}
         grabCursor={true}
         initialSlide={1}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
         loop={true}
         className="mySwiper"
         autoplay={{
-          delay: 5000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         breakpoints={{
@@ -65,6 +66,10 @@ const TestimonialSwiper = () => {
           768: {
             slidesPerView: 2.5,
           },
+        }}
+        
+        style={{//@ts-ignore
+          "--swiper-pagination-color": "#556d5f",
         }}
       >
         {testimonialItems.map(({ image, name, text }, index) => {
