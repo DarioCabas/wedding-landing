@@ -47,10 +47,9 @@ const TestimonialSwiper = () => {
           enabled: true,
         }}
         navigation={false}
-        spaceBetween={30}
         modules={[Autoplay, Pagination, Navigation, Keyboard]}
         centeredSlides={true}
-        slidesPerView={3}
+        slidesPerView={1}
         grabCursor={true}
         initialSlide={1}
         loop={true}
