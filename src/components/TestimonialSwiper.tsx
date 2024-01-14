@@ -10,62 +10,62 @@ import 'swiper/css/navigation';
 
 const testimonialItems = [
   {
-    image: "/img/testimonials/1.png",
+    image: "/img/testimonials/1.jpg",
     name: "Lorena Jácome y Santiago García ",
     text: '"De parte de Lorena y Mío queremos agradecerles por nuestra boda, todo quedó maravilloso y recibimos los mejores comentarios de nuestros invitados y familia, gracias todo su apoyo, asesoramiento y sugerencias que nos dieron sobre todo la paciencia que nos tuvieron el acople a nuestro tiempo que fue muy corto pero todo estuvo magnífico, superó nuestras expectativas y nos hicieron muy felices, de todos todo corazón Dios les pague."',
   },
   {
-    image: "/img/testimonials/2.png",
+    image: "/img/testimonials/2.jpg",
     name: "Paola Santander y Alex Solís",
     text: '"Todo estuvo maravilloso, el lugar perfecto, los arreglos hermosos, las flores divinas, todo estuvo lindo, la comida deliciosa, todo el mundo nos felicitó y agradeció por esa comida riquísima, nosotros les agradecemos a ustedes, pero principalmente a ti Majito que estuviste más pendiente que nosotros en todo, en realidad, todo estuvo muy lindo."',
   },
   {
-    image: "/img/testimonials/3.png",
+    image: "/img/testimonials/3.jpg",
     name: "Carlos y Carolina Llerena",
     text: '"La Victoria, mil gracias por toda la colaboración en cada cosa, estuvo espectacular sin duda alguna fue la mejor recepción q pudimos escoger para nuestra boda, muchas bendiciones Don Julio, Doña Vicky y Majo,  gracias por todo estuvo genial. Lo único q me da tristeza es que ya no bajaremos a la quinta, me encariñe muchísimo con ustedes, espero exista otra oportunidad y podamos disfrutar nuevamente con ustedes un abrazo."',
   },
   {
-    image: "/img/testimonials/4.png",
+    image: "/img/testimonials/4.jpg",
     name: "Daniela Chiriboga y Daniel Jaramillo",
     text: '"La Victoria muchas gracias por todo!. Que hermoso que quedó todo, la decoración súpero totalmente mis expectativas y la comida estuvo demasiado rica! Gracias por todo tu apoyo durante este último año, definitivamente no pudimos elegir mejor lugar para organizar la boda!"',
   },
   {
-    image: "/img/testimonials/5.png",
+    image: "/img/testimonials/5.jpg",
     name: "Belén Tipan y David Chuquimarca",
     text: '"De parte de David у mío, queremos agradecerles por todo, estuvo hermoso y nos encantó. Todos nos dijeron que les gustó mucho todo, en especial la comida, atención, la decoración ni se diga. Gracias infinitas a la Victoria, Don Julio, Sra. Victoria y Majo. Se lucieron!!!"',
   },
   {
-    image: "/img/testimonials/6.png",
+    image: "/img/testimonials/6.jpg",
     name: "Aníbal Andrade – Evento Corporativo Pedidos Ya Ecuador",
     text: '"En verdad se lucieron!! Espero seguir trabajando con La Victoria!! Gran trabajo!! Un evento impecable en un lugar hermoso. Todo salió como lo planificamos."',
   },
   {
-    image: "/img/testimonials/7.png",
+    image: "/img/testimonials/7.jpg",
     name: "Cristina Swing ",
     text: '"Gracias a todo el maravilloso equipo que hace de La Victoria un lugar tan especial. Nos apoyaron en cada detalle para el bautizo de mi hija, desde escoger una paleta de colores adecuada, la organización y sobretodo la deliciosa comida que nos sirvieron. Por siempre en nuestros corazones."',
   },
   {
-    image: "/img/testimonials/8.png",
+    image: "/img/testimonials/8.jpg",
     name: "Ximena Pavón Paz",
     text: '"Estamos muy agradecidos por el gran servicio, decoración, comida y ambiente que tuvimos en la celebración de la Primera Comunión de nuestro hijo. Fue un día mágico para todos nosotros!!!. Que sigan adelante con su hermosa labor, bendiciones y los mejores éxitos. Totalmente recomendable, espectacular!!!!!"',
   },
   {
-    image: "/img/testimonials/9.png",
+    image: "/img/testimonials/9.jpg",
     name: "Estefanía Ríos",
     text: '"Querido Don Julio, Doña Victoria y Majo infinitas gracias por la organización del cumpleaños de mi esposo, la decoración fue tal como lo habíamos pensado, la comida fue espectacular, todos los invitados nos comentaron que el servicio estuvo excelente. Mil gracias por todo su trabajo."',
   },
   {
-    image: "/img/testimonials/10.png",
+    image: "/img/testimonials/10.jpg",
     name: "Estefanía Villacís ",
     text: '"Queridos amigos de La Victoria, infinitas gracias por hacer de mi fiesta de grado una hermosa ocasión, todo estuvo excelente desde la planificación de donde escogimos cada detalle hasta la puesta en escena el día del evento, la comida fue de otro mundo, gracias por su apoyo en este día tan, pero tan especial. Sin duda los recordamos con mucho cariño."',
   },
   {
-    image: "/img/testimonials/11.png",
+    image: "/img/testimonials/11.jpg",
     name: "Mónica Castro y David Borja",
     text: '"La atención cálida y gentil de La Victoria desde el primer contacto generó confianza y la sensación de que era el lugar adecuado para la boda. La locación es acogedora y bien cuidada, con una buena vibra. El apoyo de La Victoria facilitó la organización de la boda y todos los invitados se sintieron a gusto y bien atendidos."',
   },
   {
-    image: "/img/testimonials/12.png",
+    image: "/img/testimonials/12.jpg",
     name: "María Gabriela Vaca",
     text: '"Gracias a ustedes. Fue más de lo que esperábamos. Decoración, organización, el menú, el ambiente, la música...Realmente todo fue mágico. Gracias La Victoria. Gracias Doña Victoria, Don Julio y Majo. Son el equipo perfecto"',
   },
