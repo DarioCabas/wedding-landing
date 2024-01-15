@@ -5,11 +5,226 @@ import FooterNav from "../components/shared/FooterNav.astro";
 ---
 
 <section
-  class="landing-section bg-yellow-400 w-screen text-center overflow-hidden relative"
-  id="contact"
+class="landing-section w-screen overflow-hidden relative bg-[#d0cecb]"
+id="contact"
 >
-  <!-- Footer container -->
-  <footer
+<footer
+  class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 "
+>
+  <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="sm:col-span-2">
+      <a
+        href="/"
+        aria-label="Go home"
+        title="Company"
+        class="inline-flex items-center"
+      >
+        <img src="/quinde.png" width="60" />
+        <span
+          class="ml-2 text-xl font-bold tracking-wide text-[#556d6f] uppercase font-[Georgia]"
+          >La victoria eventos</span
+        >
+      </a>
+      <div class="mt-6 lg:max-w-sm">
+        <p class="font-[Montserrat] text-sm text-[#556d5f] text-justify">
+          Diseñamos y hacemos de tu evento especial, recuerdos memorables que
+          puedas llevar a donde vayas y perduren toda tu vida.
+        </p>
+        <p class="mt-4 text-sm text-[#556d5f] font-[Montserrat]">Quito-Ecuador</p>
+      </div>
+    </div>
+    <div class="space-y-2 text-sm">
+      <p class="font-[Georgia] text-base font-bold tracking-wide text-[#556d5f]">Contacto</p>
+      <div class="flex">
+        <p class="font-[Montserrat] mr-1 text-[#556d5f]">Celular:</p>
+        <a
+          target="_blank"
+          href="https://wa.me/593987361647"
+          aria-label="Our phone"
+          title="Our phone"
+          class="font-[Montserrat] transition-colors duration-300 text-deep-purple-accent-400 hover:underline text-[#556d5f]"
+          >0987361647</a
+        >
+      </div>
+      <div class="flex">
+        <p class="font-[Montserrat] mr-1 text-[#556d5f]">Teléfono:</p>
+        <a
+          href="tel:022046402"
+          target="_blank"
+          aria-label="Our phone"
+          title="Our phone"
+          class="font-[Montserrat] transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 hover:underline text-[#556d5f]"
+          >(02)-2046402</a
+        >
+      </div>
+      <div class="flex">
+        <p class="font-[Montserrat] mr-1 text-[#556d5f]">Email:</p>
+        <a
+          href="mailto:info@lorem.mail"
+          aria-label="Our email"
+          title="Our email"
+          class="font-[Montserrat] transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 hover:underline text-[#556d5f]"
+          target="_blank">info@lorem.mail</a
+        >
+      </div>
+      <div class="flex">
+        <p class="font-[Montserrat] mr-1 text-[#556d5f]">Dirección:</p>
+        <a
+          href="https://www.google.com/maps/dir/-0.2106752,-78.3728449/Quinta+la+Victoria,+5932,+Quito+170184/@-0.2024335,-78.3886809,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x91d593d8789384bf:0x495f6aa0761006a!2m2!1d-78.3836663!2d-0.193842?entry=ttu"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Our address"
+          target="_blank"
+          title="Our address"
+          class="font-[Montserrat] hover:underline transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 text-[#556d5f]"
+        >
+          Tumbaco, Quito, Ecuador
+        </a>
+      </div>
+    </div>
+    <div>
+      <span class="font-[Georgia] text-base font-bold tracking-wide text-[#556d5f]">Social</span
+      >
+      <div class="flex items-center mt-1 space-x-2">
+        <a
+          href="https://www.facebook.com/LaVictoriaEv"
+          target="_blank"
+          class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+        >
+          <svg
+            height="100%"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            ]
+            fill="#ffffff"
+            class="h-8"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            ><path
+              d="M255.022,511.998l0.229,0.001l-0.079,0l-0.15,-0.001Zm1.806,0.001l-0.079,0l0.229,-0.001l-0.15,0.001Zm-2.588,-0.005l0.247,0.001l-0.142,0l-0.105,-0.001Zm3.415,0.001l-0.142,0l0.247,-0.001l-0.105,0.001Zm-4.169,-0.007l0.165,0.001l-0.132,-0.001l-0.033,0Zm4.995,0l-0.132,0.001l0.165,-0.001l-0.033,0Zm0.826,-0.009l-0.058,0.001l0.223,-0.003l-0.165,0.002Zm-6.779,-0.002l0.223,0.003l-0.058,-0.001l-0.165,-0.002Zm7.604,-0.01l-0.135,0.002l0.275,-0.004l-0.14,0.002Zm-8.404,-0.002l0.275,0.004l-0.135,-0.002l-0.14,-0.002Zm9.228,-0.012l-0.182,0.003l0.254,-0.005l-0.072,0.002Zm-9.984,-0.002l0.254,0.005l-0.182,-0.003l-0.072,-0.002Zm-0.937,-0.019l0.225,0.005l-0.04,-0.001l-0.185,-0.004Zm11.745,0.004l-0.04,0.001l0.225,-0.005l-0.185,0.004Zm-12.567,-0.025l0.309,0.008l-0.125,-0.003l-0.184,-0.005Zm13.39,0.005l-0.125,0.003l0.309,-0.008l-0.184,0.005Zm0.823,-0.022l-0.201,0.006l0.316,-0.009l-0.115,0.003Zm-14.967,-0.003l0.316,0.009l-0.201,-0.006l-0.115,-0.003Zm-0.72,-0.022l0.225,0.007l-0.212,-0.007l-0.194,-0.006l0.181,0.006Zm16.509,0l-0.212,0.007l0.225,-0.007l0.181,-0.006l-0.194,0.006Zm0.821,-0.027l-0.112,0.004l0.345,-0.012l-0.233,0.008Zm-18.371,-0.008l0.345,0.012l-0.112,-0.004l-0.233,-0.008Zm-0.749,-0.028l0.362,0.013l-0.201,-0.007l-0.161,-0.006Zm19.941,0.006l-0.201,0.007l0.362,-0.013l-0.161,0.006Zm-20.676,-0.036l0.354,0.015l-0.277,-0.011l-0.077,-0.004Zm21.495,0.004l-0.277,0.011l0.354,-0.015l-0.077,0.004Zm-22.525,-0.049l0.38,0.017l-0.093,-0.003l-0.287,-0.014Zm23.345,0.014l-0.093,0.003l0.38,-0.017l-0.287,0.014Zm-24.084,-0.048l0.394,0.018l-0.186,-0.008l-0.208,-0.01Zm24.902,0.01l-0.186,0.008l0.394,-0.018l-0.208,0.01Zm-25.63,-0.047l0.397,0.02l-0.279,-0.013l-0.118,-0.007Zm26.448,0.007l-0.279,0.013l0.397,-0.02l-0.118,0.007Zm0.818,-0.043l-0.362,0.019l0.321,-0.017l0.378,-0.021l-0.337,0.019Zm-27.925,0.002l0.321,0.017l-0.362,-0.019l-0.337,-0.019l0.378,0.021Zm28.741,-0.048l-0.16,0.009l0.406,-0.023l-0.246,0.014Zm-29.844,-0.014l0.406,0.023l-0.16,-0.009l-0.246,-0.014Zm-0.722,-0.043l0.405,0.024l-0.253,-0.014l-0.152,-0.01Zm31.382,0.01l-0.253,0.014l0.405,-0.024l-0.152,0.01Zm-32.071,-0.053l0.365,0.023l-0.34,-0.021l-0.342,-0.022l0.317,0.02Zm32.887,0.002l-0.34,0.021l0.365,-0.023l0.317,-0.02l-0.342,0.022Zm0.814,-0.053l-0.122,0.008l0.387,-0.026l-0.265,0.018Zm-34.755,-0.018l0.387,0.026l-0.122,-0.008l-0.265,-0.018Zm-0.721,-0.05l0.38,0.027l-0.208,-0.014l-0.172,-0.013Zm36.29,0.013l-0.208,0.014l0.38,-0.027l-0.172,0.013Zm-37.009,-0.064l0.349,0.025l-0.271,-0.019l-0.078,-0.006Zm37.822,0.006l-0.271,0.019l0.349,-0.025l-0.078,0.006Zm-38.789,-0.079l0.306,0.023l-0.074,-0.005l-0.232,-0.018Zm39.602,0.018l-0.074,0.005l0.306,-0.023l-0.232,0.018Zm0.811,-0.063l-0.146,0.011l0.311,-0.025l-0.165,0.014Zm-41.157,-0.014l0.311,0.025l-0.146,-0.011l-0.165,-0.014Zm-0.725,-0.059l0.264,0.022l-0.186,-0.015l-0.078,-0.007Zm42.694,0.007l-0.186,0.015l0.264,-0.022l-0.078,0.007Zm-43.492,-0.074l0.079,0.007l-0.013,-0.001l-0.066,-0.006Zm44.302,0.006l-0.013,0.001l0.079,-0.007l-0.066,0.006Zm0.81,-0.071l-0.072,0.006l0.181,-0.016l-0.109,0.01Zm-45.965,-0.01l0.181,0.016l-0.072,-0.006l-0.109,-0.01Zm-0.75,-0.068l0.135,0.013l-0.084,-0.008l-0.051,-0.005Zm47.523,0.005l-0.084,0.008l0.135,-0.013l-0.051,0.005Zm-63.736,-2.025c-122.319,-19.226 -216,-125.203 -216,-252.887c0,-141.29 114.71,-256 256,-256c141.29,0 256,114.71 256,256c0,127.684 -93.681,233.661 -216,252.887l0,-178.887l59.65,0l11.35,-74l-71,0l0,-48.021c0,-20.245 9.918,-39.979 41.719,-39.979l32.281,0l0,-63c0,0 -29.296,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.887Z"
+            ></path></svg
+          >
+        </a>
+        <a
+          href="https://instagram.com/lavictoriaev?igshid=MmU2YjMzNjRlOQ=="
+          target="_blank"
+          class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+        >
+          <svg
+            height="100%"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#ffffff"
+            class="h-8"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            ><path
+              d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,81c-47.527,0 -53.487,0.201 -72.152,1.053c-18.627,0.85 -31.348,3.808 -42.48,8.135c-11.508,4.472 -21.267,10.456 -30.996,20.184c-9.729,9.729 -15.713,19.489 -20.185,30.996c-4.326,11.132 -7.284,23.853 -8.135,42.48c-0.851,18.665 -1.052,24.625 -1.052,72.152c0,47.527 0.201,53.487 1.052,72.152c0.851,18.627 3.809,31.348 8.135,42.48c4.472,11.507 10.456,21.267 20.185,30.996c9.729,9.729 19.488,15.713 30.996,20.185c11.132,4.326 23.853,7.284 42.48,8.134c18.665,0.852 24.625,1.053 72.152,1.053c47.527,0 53.487,-0.201 72.152,-1.053c18.627,-0.85 31.348,-3.808 42.48,-8.134c11.507,-4.472 21.267,-10.456 30.996,-20.185c9.729,-9.729 15.713,-19.489 20.185,-30.996c4.326,-11.132 7.284,-23.853 8.134,-42.48c0.852,-18.665 1.053,-24.625 1.053,-72.152c0,-47.527 -0.201,-53.487 -1.053,-72.152c-0.85,-18.627 -3.808,-31.348 -8.134,-42.48c-4.472,-11.507 -10.456,-21.267 -20.185,-30.996c-9.729,-9.728 -19.489,-15.712 -30.996,-20.184c-11.132,-4.327 -23.853,-7.285 -42.48,-8.135c-18.665,-0.852 -24.625,-1.053 -72.152,-1.053Zm0,31.532c46.727,0 52.262,0.178 70.715,1.02c17.062,0.779 26.328,3.63 32.495,6.025c8.169,3.175 13.998,6.968 20.122,13.091c6.124,6.124 9.916,11.954 13.091,20.122c2.396,6.167 5.247,15.433 6.025,32.495c0.842,18.453 1.021,23.988 1.021,70.715c0,46.727 -0.179,52.262 -1.021,70.715c-0.778,17.062 -3.629,26.328 -6.025,32.495c-3.175,8.169 -6.967,13.998 -13.091,20.122c-6.124,6.124 -11.953,9.916 -20.122,13.091c-6.167,2.396 -15.433,5.247 -32.495,6.025c-18.45,0.842 -23.985,1.021 -70.715,1.021c-46.73,0 -52.264,-0.179 -70.715,-1.021c-17.062,-0.778 -26.328,-3.629 -32.495,-6.025c-8.169,-3.175 -13.998,-6.967 -20.122,-13.091c-6.124,-6.124 -9.917,-11.953 -13.091,-20.122c-2.396,-6.167 -5.247,-15.433 -6.026,-32.495c-0.842,-18.453 -1.02,-23.988 -1.02,-70.715c0,-46.727 0.178,-52.262 1.02,-70.715c0.779,-17.062 3.63,-26.328 6.026,-32.495c3.174,-8.168 6.967,-13.998 13.091,-20.122c6.124,-6.123 11.953,-9.916 20.122,-13.091c6.167,-2.395 15.433,-5.246 32.495,-6.025c18.453,-0.842 23.988,-1.02 70.715,-1.02Zm0,53.603c-49.631,0 -89.865,40.234 -89.865,89.865c0,49.631 40.234,89.865 89.865,89.865c49.631,0 89.865,-40.234 89.865,-89.865c0,-49.631 -40.234,-89.865 -89.865,-89.865Zm0,148.198c-32.217,0 -58.333,-26.116 -58.333,-58.333c0,-32.217 26.116,-58.333 58.333,-58.333c32.217,0 58.333,26.116 58.333,58.333c0,32.217 -26.116,58.333 -58.333,58.333Zm114.416,-151.748c0,11.598 -9.403,20.999 -21.001,20.999c-11.597,0 -20.999,-9.401 -20.999,-20.999c0,-11.598 9.402,-21 20.999,-21c11.598,0 21.001,9.402 21.001,21Z"
+            ></path></svg
+          >
+        </a>
+        <a
+          href="https://www.youtube.com/@VictoriaEventos"
+          target="_blank"
+          class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+        >
+          <svg
+            height="100%"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#ffffff"
+            class="h-8"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            ><path
+              d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm153.315,178.978c-3.68,-13.769 -14.522,-24.61 -28.29,-28.29c-24.958,-6.688 -125.025,-6.688 -125.025,-6.688c0,0 -100.067,0 -125.025,6.688c-13.765,3.68 -24.61,14.521 -28.29,28.29c-6.685,24.955 -6.685,77.024 -6.685,77.024c0,0 0,52.067 6.685,77.02c3.68,13.769 14.525,24.614 28.29,28.293c24.958,6.685 125.025,6.685 125.025,6.685c0,0 100.067,0 125.025,-6.685c13.768,-3.679 24.61,-14.524 28.29,-28.293c6.685,-24.953 6.685,-77.02 6.685,-77.02c0,0 0,-52.069 -6.685,-77.024Zm-185.316,125.025l0,-96.002l83.137,48.001l-83.137,48.001Z"
+            ></path></svg
+          >
+        </a>
+        <a
+          href="https://www.tiktok.com/@lavictoriaeventos"
+          target="_blank"
+          class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+        >
+        <svg
+        
+        style="shape-rendering: geometricPrecision; text-rendering: geometricPrecision; image-rendering: optimizeQuality; fill-rule: evenodd; clip-rule: evenodd"
+        version="1.1"
+        viewBox="0 0 512 512"
+       
+        fill="#ffffff"
+        class="h-8"
+        xmlns="http://www.w3.org/2000/svg"
+        
+      >
+        <defs>
+          <style type="text/css">
+            {`
+              .fil0 { fill: white; }
+            `}
+          </style>
+        </defs>
+        <g id="Layer_x0020_1">
+          <path
+            class="fil0"
+            d="M256 0c141.39,0 256,114.61 256,256 0,141.39 -114.61,256 -256,256 -141.39,0 -256,-114.61 -256,-256 0,-141.39 114.61,-256 256,-256zm57.5 106.01c0.01,4.58 1.36,70.83 70.87,74.96 0,19.1 0.02,32.95 0.02,51.18 -5.26,0.3 -45.76,-2.64 -70.97,-25.12l-0.08 99.64c0.96,69.16 -49.93,111.24 -116.46,96.7 -114.71,-34.31 -76.59,-204.44 38.59,-186.24 0,54.93 0.03,-0.01 0.03,54.93 -47.58,-7 -63.5,32.58 -50.85,60.93 11.5,25.8 58.88,31.39 75.41,-5.01 1.87,-7.12 2.8,-15.25 2.8,-24.37l0 -197.85 50.64 0.25z"
+          />
+        </g>
+      </svg>
+      
+        </a>
+      </div>
+      <p class="font-[Montserrat] mt-4 text-sm text-[#556d5f]">
+        Síguenos en todas nuestras redes sociales y comparte con nosotros
+        momentos únicos.
+      </p>
+    </div>
+  </div>
+  <div
+    class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row"
+  >
+    <p class="font-[Montserrat] text-sm text-[#556d5f]">
+      © Copyright 2024 La victoria eventos.
+    </p>
+    <ul
+      class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+    >
+      <li>
+        <a
+          href="/"
+          class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+        ></a>
+      </li>
+      <li>
+        <a
+          href="/"
+          class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+        ></a>
+      </li>
+      <li class="flex">
+        <p class="mr-1 text-[#556d5f] font-[Montserrat]">Realizado por:</p>
+        <a
+          href="https://ayaumadev.com/"
+          aria-label="web of developer"
+          title="webpage"
+          class="font-[Montserrat] transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 hover:underline text-[#556d5f]"
+          target="_blank">Ayaumadev</a
+        >
+      </li>
+    </ul>
+  </div>
+</footer>
+</section>
+<!-- <footer
     class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
   >
     <div
@@ -18,7 +233,7 @@ import FooterNav from "../components/shared/FooterNav.astro";
       <div class="mr-10 hidden lg:block text-[#86a392] font-[Georgia] font-bold">
         <span>Mantente conectado con nosotros:</span>
       </div>
-      <!-- Social network icons container -->
+    
       <div class="flex justify-center">
         <a href="https://www.facebook.com/LaVictoriaEv" target="_blank" class="mr-6 text-neutral-600 dark:text-neutral-200">
           <svg
@@ -64,15 +279,15 @@ import FooterNav from "../components/shared/FooterNav.astro";
       </div>
     </div>
 
-    <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+    
     <div class="mx-6 py-10 text-center md:text-left sm:ml-40 sm:mr-40">
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <!-- Tailwind Elements section -->
+       
         <div class="">
           <h6
             class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start text-[#556d5f] font-[Georgia]"
           >
-          <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 h-4 w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8a2 2 0 0 0 -2 -2" /><path d="M6 8a6 6 0 1 1 12 0c0 4.97 -2.686 9 -6 9s-6 -4.03 -6 -9" /><path d="M12 17v1a2 2 0 0 1 -2 2h-3a2 2 0 0 0 -2 2" /></svg>
+          <img src="/quinde.png" width="50" class="mr-4">
             
              La Victoria Eventos
           </h6>
@@ -81,10 +296,10 @@ import FooterNav from "../components/shared/FooterNav.astro";
             puedas llevar a donde vayas y perduren toda tu vida.
           </p>
         </div>
-        <!-- Products section -->
+        
         <div class="w-full"></div>
         <div class="w-full"></div>
-        <!-- Contact section -->
+
         <div class="">
           <h6
             class="font-[Georgia] mb-4 flex justify-center font-semibold uppercase md:justify-start text-[#556d5f]"
@@ -128,13 +343,20 @@ import FooterNav from "../components/shared/FooterNav.astro";
           >
           <svg xmlns="http://www.w3.org/2000/svg" 
           class="mr-3 h-5 w-5" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 3h-2a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2z" /><path d="M16 4h-11a3 3 0 0 0 -3 3v10a3 3 0 0 0 3 3h11" /><path d="M12 8h-6v3h6z" /><path d="M12 14v.01" /><path d="M9 14v.01" /><path d="M6 14v.01" /><path d="M12 17v.01" /><path d="M9 17v.01" /><path d="M6 17v.01" /></svg>
-            022046402
+            (02)-2046402
+          </a>
+          <a
+            class="mb-4 flex items-center justify-center md:justify-start hover:underline text-[#86a392] font-[Georgia]"
+            
+            
+          >
+            Quito-Ecuador
           </a>
         </div>
       </div>
     </div>
 
-    <!--Copyright section-->
+ 
     <div class="bg-[#f0dedc] p-6 text-center dark:bg-neutral-700">
       <span class="text-[#86a392] font-[Georgia]">© 2024 Copyright:</span>
       <a
@@ -147,5 +369,4 @@ import FooterNav from "../components/shared/FooterNav.astro";
           Ayaumadev
         </a>
     </div>
-  </footer>
-</section>
+  </footer> -->
