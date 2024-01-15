@@ -76,7 +76,7 @@ const TestimonialSwiper = () => {
     <>
       <div className="max-w-6xl px-5 mx-auto mt-16 mb-10 md:mt-36 md:mb-20 text-center">
         <h2 className="text-4xl font-bold text-center text-darkBlue text-[#556d5f] font-[Georgia]">
-          Que dicen de nosotros
+          Testimonios
         </h2>
       </div>
       <Swiper
@@ -128,7 +128,7 @@ const TestimonialSwiper = () => {
                     }}
                   />
                   <h3 className="text-lg font-bold text-darkBlue font-[Georgia]">{name}</h3>
-                  <p className="text-sm text-center leading-loose text-darkGrayishBlue font-[Georgia]">
+                  <p className="text-sm text-center leading-loose text-darkGrayishBlue font-[Montserrat]">
                     {text}
                   </p>
                 </div>

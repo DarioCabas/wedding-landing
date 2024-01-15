@@ -1,115 +1,73 @@
 ---
 const services = [
   {
-    image: "https://www.svgrepo.com/show/304765/wedding.svg",
+    image: "/img/events/services/boda.jpeg",
     title: "Bodas",
     description:
-      "Pueden ser desde 40 hasta 120 personas, ideal para parejas que buscan hacer su boda en un lugar natural, acogedor, rústico y sobretodo mágico, aquí te asesoramos en cada uno de los detalles desde escoger la paleta ideal de colores, proveedores excelentes en el mercado de bodas de Quito, además de puesta en escena de prototipo de decoración, contarás con una persona que te guíe y asesore en todo momento, además, de contar con una gastronomía excelente y variada.  Contamos un área de ceremonias en donde podrás elegir el concepto y estilo que desees o si gustas tenemos una iglesia a 5 minutos de la quinta. ",
+      "Un lugar de ensueño en medio de la naturaleza en donde podrás realizar tu boda, te asesoramos en cada detalle, contamos con el personal capacitado y la infraestructura adecuada para hacer de tu evento un día mágico.",
   },
   {
-    image: "https://www.svgrepo.com/show/275627/wedding-contract-marriage.svg",
-    title: "Bodas civiles",
+    image: "/img/events/services/social.jpeg",
+    title: "Eventos sociales",
     description:
-      "De 30 a 50 personas adultas en donde puedes escoger hacer de tu boda civil una pequeña reunión con tus más allegados o hacer una celebración de 50 a 120 personas adultas por todo lo alto como es el mágico mundo de las bodas, para ello te recomendamos hacer una boda especial y romántica. ",
+      "Ideal para las familias que desean realizar cualquier tipo de evento social como: Bautizos o Baby showers hasta cumpleaños o graduaciones. ",
   },
   {
-    image: "https://www.svgrepo.com/show/404839/birthday-cake.svg",
-    title: "Quince años",
+    image: "/img/events/services/petit.jpeg",
+    title: "Petit Events",
     description:
-      "Desde 50 a 120 personas, ideal para las quinceañeras y familias que deseen una celebración por todo lo alto con fiesta, presentación de un delicioso menú 4 tiempos, escoger una paleta de colores de acuerdo a su estilo. Uso exclusivo de las instalaciones, además, cuentan con la asesoría de una event planner que les apoye en la coordinación de cada detalle a la quinceañera y a sus padres. ",
+      "Perfecto para quienes desean una celebración sencilla, con detalles y pasar un momento íntimo con sus seres queridos. Ideal para grupos de 30 a 50 personas.",
   },
-  {
-    image: "https://www.svgrepo.com/show/402297/party-popper.svg",
-    title:
-      "Eventos sociales (Primeras Comuniones - Bautizos - Graduaciones - Cumpleaños)",
-    description:
-      "Eventos desde 50 a 120 personas, ideal para familias que deseen una celebración por todo lo alto, con un menú exquisito 4 tiempos, fiesta, música, baile y diversión con todos sus seres queridos. Uso exclusivo de las instalaciones, además, cuentan con la asesoría de una event planner que les apoye en la coordinación de este día importante. ",
-  },
-  {
-    image: "https://www.svgrepo.com/show/492698/people-who-support.svg",
-    title: "Events Petit ",
-    description:
-      "Almuerzos desde 30 hasta 50 personas adultas, uso de las instalaciones por 4 horas en donde destaque un menú delicioso en el campo, en mesas de madera tipo picnic y puedas compartir junto a tu familia o amigos, ideal para las familias que desean una reunión familiar sencilla y compartir un pequeño momento junto a sus seres queridos.",
-  },
+  
 ];
+
+
 ---
 
 <section
-  class="landing-section bg-[#d0cecb] w-screen text-center overflow-hidden relative"
+  class="landing-section bg-[#d5b4b1] w-screen text-center overflow-hidden relative"
   id="services"
 >
   <div class="container my-10 mx-auto md:px-6">
-    <!-- Section: Design Block -->
-    <section class="mb-32 text-center lg:text-left">
-      <h2
-        class="mb-12 text-center text-3xl font-bold text-[#556d5f] font-[Georgia]"
-      >
+    <div class="max-w-6xl px-5 mx-auto mt-16 mb-10 md:mt-10 md:mb-2 text-center">
+      <h2 class="text-4xl font-bold text-center text-darkBlue text-[#556d5f] font-[Georgia]">
         Servicios
       </h2>
-      <div class="md:max-h-full">
-        <div class="">
-          <div
-            class="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 mt-16 px-5"
-          >
-            {
-              services.map((service) => (
-                <div class="flex gap-4 items-start flex-col ">
-                  <span class="text-[#d5b4b1] bg-[#f0dedc] p-3 rounded-full mx-auto md:mx-0">
-                    <img
-                      src={service.image}
-                      class="w-12 mx-auto"
-                      width="512"
-                      height="512"
-                      alt="burger illustration"
-                    />
-                  </span>
-                  <div>
-                    <h3 class="font-semibold text-xl font-[Georgia] text-center md:text-left"> {service.title}</h3>
-                    <p class="mt-1 text-gray-500 text-justify font-[Georgia]"> {service.description}</p>
-                  </div>
-                </div>
-              ))
-            }
-
+    </div>
+    <section class="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
+      <div class="container mx-auto space-y-12">
+       
+        <div class="bg-[#86a392] flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+          <img src={services[0].image} alt="" class="object-contain w-96">
+          <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
             
-
-          <!-- <div
-            class="w-full mt-16 grid divide-x divide-y divide-[#d0cecb] dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4"
-          >
-          {
-            services.map(service => 
-            <div
-              class="group relative bg-[#d0cecb] transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-            >
-              <div class="relative space-y-8 py-12 p-8">
-                <img
-                  src={service.image}
-                  class="w-12 mx-auto"
-                  width="512"
-                  height="512"
-                  alt="burger illustration"
-                />
-
-                <div class="space-y-2">
-                  <h5
-                    class="text-xl text-center font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary font-[Georgia]"
-                  >
-                    {service.title}
-                  </h5>
-                  <p class="text-gray-600 dark:text-gray-300 font-[Georgia] text-justify">
-                    {service.description}
-                  </p>
-                </div>
-                
-              </div>
-            </div>
-            )
-          }
+            <h3 class="text-3xl font-bold font-[Georgia] text-[#f0dedc]">{services[0].title}</h3>
+            <p class="my-6 text-[#f0dedc] font-[Montserrat] text-justify">{services[0].description}</p>
             
-          </div> -->
+          </div>
         </div>
+
+        <div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse bg-[#86a392] ">
+          <img src={services[1].image} alt="" class="object-contain w-96">
+          <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
+           
+            <h3 class="text-3xl font-bold font-[Georgia] text-[#f0dedc] ">{services[1].title}</h3>
+            <p class="text-justify my-6 font-[Montserrat] text-[#f0dedc]">{services[1].description}</p>
+      
+          </div>
+        </div>
+
+        <div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row bg-[#86a392] ">
+          <img src={services[2].image} alt="" class="object-contain w-96">
+          <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
+         
+            <h3 class="text-3xl font-bold font-[Georgia] text-[#f0dedc]">{services[2].title}</h3>
+            <p class="my-6 font-[Montserrat] text-[#f0dedc] text-justify">{services[2].description}</p>
+          </div>
+        </div>
+
       </div>
     </section>
-    <!-- Section: Design Block -->
+
   </div>
 </section>
