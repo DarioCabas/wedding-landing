@@ -54,7 +54,7 @@ const services = [
             {
               services.map((service) => (
                 <div class="flex gap-4 items-start flex-col ">
-                  <span class="text-[#d5b4b1] bg-[#f0dedc] p-3 rounded-full">
+                  <span class="text-[#d5b4b1] bg-[#f0dedc] p-3 rounded-full mx-auto md:mx-0">
                     <img
                       src={service.image}
                       class="w-12 mx-auto"
@@ -64,7 +64,7 @@ const services = [
                     />
                   </span>
                   <div>
-                    <h3 class="font-semibold text-xl font-[Georgia]"> {service.title}</h3>
+                    <h3 class="font-semibold text-xl font-[Georgia] text-center md:text-left"> {service.title}</h3>
                     <p class="mt-1 text-gray-500 text-justify font-[Georgia]"> {service.description}</p>
                   </div>
                 </div>
