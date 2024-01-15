@@ -128,7 +128,7 @@ const TestimonialSwiper = () => {
                     }}
                   />
                   <h3 className="text-lg font-bold text-darkBlue font-[Georgia]">{name}</h3>
-                  <p className="text-sm text-center leading-loose text-darkGrayishBlue font-[Georgia]">
+                  <p className="text-sm text-center leading-loose text-darkGrayishBlue font-[Montserrat]">
                     {text}
                   </p>
                 </div>
